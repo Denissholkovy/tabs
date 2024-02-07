@@ -4,7 +4,7 @@ const tabs = {
   check: (btn) => {
     const index = Array.prototype.indexOf.call(tabs.btn, btn);
     tabs.btn.forEach((btn) => btn.classList.remove("active"));
-    tabs.contentList.forEach((btn) => btn.classList.remove("active"));
+    tabs.contentList.forEach((content) => content.classList.remove("active"));
     tabs.btn[index].classList.add("active");
     tabs.contentList[index].classList.add("active");
   },
